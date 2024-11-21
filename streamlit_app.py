@@ -1,11 +1,15 @@
 import streamlit as st
-import matplotlib.pyplot as plt
-from collections import Counter
+st.sidebar.title("¿Cuántas proteínas contiene y cuáles son?")
+st.sidbear.button("Click")
+st.sidbear.radio("Contenido",["Graficas", "Imagenes"]
 
 st.title("¿Cuántas proteínas contiene y cuáles son?")
 st.write(
     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )
+
+import matplotlib.pyplot as plt
+from collections import Counter
 
 # Diccionario para la traducción del código genético
 codon_to_amino_acid = {
@@ -74,7 +78,7 @@ def analizar_adn_y_graficar(adn):
     graficar_proteinas(conteo_proteinas)
 
 # Entrada: Secuencia de ADN
-st.sidebar(secuencia_adn) = "ATGCGTACGTTAGC"  # Ejemplo de secuencia de ADN
+secuencia_adn = "ATGCGTACGTTAGC"  # Ejemplo de secuencia de ADN
 
 # Analizar la secuencia de ADN y graficar
 analizar_adn_y_graficar(secuencia_adn)
