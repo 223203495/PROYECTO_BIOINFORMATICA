@@ -1,3 +1,4 @@
+st.sidebar()
 import streamlit as st
 
 st.title("¿Cuántas proteínas contiene y cuáles son?")
